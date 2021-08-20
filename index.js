@@ -11,8 +11,8 @@ const TelegramBot = require('node-telegram-bot-api');
  };
  const bot = new TelegramBot(TOKEN, options);
  
- // Matches /tokenomiks
- bot.onText(/\/tokenomiks/, function onLoveText(msg) {
+ // Matches /tokenomics
+ bot.onText(/\/tokenomics/, function onLoveText(msg) {
    const opts = {
      reply_to_message_id: msg.message_id,
    };
