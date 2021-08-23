@@ -3,7 +3,7 @@
 
 const TelegramBot = require('node-telegram-bot-api');
 
- const TOKEN = process.env.TELEGRAM_TOKEN || '1989678407:AAHY0Tn9mKQSwEkU4F9oMj_VtxF2GE85l18';
+ const TOKEN = process.env.TELEGRAM_TOKEN || '1925478125:AAFTTQHUHKZ0YCtLk9gg6Tfx6NCp6ek_QSI';
 //  const TelegramBot = require('..');
 //  const request = require('request');
  const options = {
