@@ -60,7 +60,7 @@ const TelegramBot = require('node-telegram-bot-api');
   });
  
  
-
+// test
  // Matches /echo [whatever]
 //  bot.onText(/\/echo (.+)/, function onEchoText(msg, match) {
 //    const resp = match[1];
