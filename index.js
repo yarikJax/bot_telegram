@@ -11,6 +11,7 @@ const TelegramBot = require('node-telegram-bot-api');
  };
  const bot = new TelegramBot(TOKEN, options);
  
+ 
  // Matches /tokenomics
  bot.onText(/\/tokenomics/, function onLoveText(msg) {
    const opts = {
@@ -59,6 +60,47 @@ const TelegramBot = require('node-telegram-bot-api');
     bot.sendMessage(msg.chat.id, 'Contract Address ERC-20:'+"\n \n"+'0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6(Uniswap)'+"\n"+'https://etherscan.io/token/0xcA1262e77Fb25c0a4112CFc9bad3ff54F617f2e6'+"\n \n"+'BEP-20: 0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6 (Pancakeswap)'+"\n"+'https://bscscan.com/address/0xcA1262e77Fb25c0a4112CFc9bad3ff54F617f2e6', opts);
   });
  
+  // hello 
+  bot.on('message', (msg) => {
+    if (msg.text == 'hi') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'hello') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'hi jax') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'hi jax.network') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'Hi') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'Hello') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'Hi Jax') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
+  bot.on('message', (msg) => {
+    if (msg.text == 'Hi Jax.network') {
+      bot.sendMessage(msg.chat.id, "Hi " + msg.chat.first_name)
+    }
+  });
  
 // test
  // Matches /echo [whatever]
