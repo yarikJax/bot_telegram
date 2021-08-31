@@ -49,7 +49,7 @@ const TelegramBot = require('node-telegram-bot-api');
     const opts = {
       reply_to_message_id: msg.message_id,
     };
-    bot.sendMessage(msg.chat.id, 'BSC - https://dex.guru/token/0xca1262e77fb25c0a4112cfc9bad3ff54f617f2e6-bsc \n \nETH - https://dex.guru/token/0xca1262e77fb25c0a4112cfc9bad3ff54f617f2e6-eth', opts);
+    bot.sendMessage(msg.chat.id, 'BSC - https://www.dextools.io/app/bsc/pair-explorer/0xd55ffea201e689d052e504fbe40ebbe16d3da240 \n \nETH - https://www.dextools.io/app/ether/pair-explorer/0x6ffca04b61a69a10c8076e72c68036cf0222311f    ', opts);
   });
 
    // Matches /tokenomiks
