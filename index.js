@@ -25,7 +25,7 @@ const TelegramBot = require('node-telegram-bot-api');
     const opts = {
       reply_to_message_id: msg.message_id,
     };
-    bot.sendMessage(msg.chat.id, 'https://docs.google.com/presentation/d/14nGdtP8CeV1Oy-4330hEjnFmbjof3I10/edit?usp=sharing&ouid=100664305604975835247&rtpof=true&sd=true', opts);
+    bot.sendMessage(msg.chat.id, 'https://jax.network/wp-content/uploads/2021/09/Burnt-WJXN.pptx.pdf', opts);
   });
 
    // Matches /tokenomiks
