@@ -59,6 +59,14 @@ const TelegramBot = require('node-telegram-bot-api');
     };
     bot.sendMessage(msg.chat.id, 'Contract Address ERC-20:'+"\n \n"+'0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6(Uniswap)'+"\n"+'https://etherscan.io/token/0xcA1262e77Fb25c0a4112CFc9bad3ff54F617f2e6'+"\n \n"+'BEP-20: 0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6 (Pancakeswap)'+"\n"+'https://bscscan.com/address/0xcA1262e77Fb25c0a4112CFc9bad3ff54F617f2e6', opts);
   });
+
+    // locked tokens
+ bot.onText(/\/locked_tokens/, function onLoveText(msg) {
+  const opts = {
+    reply_to_message_id: msg.message_id,
+  };
+  bot.sendMessage(msg.chat.id, ' To get locked WJXN at a special price, please visit https://buy.jax.network/swap/locked-tokens/ ', opts);
+});
  
   
  
