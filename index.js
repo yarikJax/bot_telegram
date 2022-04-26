@@ -17,7 +17,7 @@ const TelegramBot = require('node-telegram-bot-api');
    const opts = {
      reply_to_message_id: msg.message_id,
    };
-   bot.sendMessage(msg.chat.id, 'https://docs.google.com/spreadsheets/u/1/d/1Ld5S2dN9Ej5sE-jNkcJJD8YSIQUCccHKJjGhwOScTwo/edit#gid=1627582296', opts);
+   bot.sendMessage(msg.chat.id, 'https://jax.network/wp-content/uploads/2022/04/tokenomics.png', opts);
  });
 
   // Matches /tokenomiks
